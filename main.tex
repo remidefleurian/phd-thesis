@@ -1,0 +1,49 @@
+\documentclass[a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[backend=biber,style=apa]{biblatex}
+\usepackage[colorlinks=true,allcolors=black]{hyperref}
+\usepackage[flushleft]{threeparttable}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{microtype}
+\usepackage{pifont}
+\usepackage{setspace}
+
+\addbibresource{bib/thesis.bib}
+\graphicspath{{./figures/}}
+
+\setlength\bibitemsep{\baselineskip}
+\onehalfspacing
+
+% \includeonly{files/01-declaration}
+
+\title{Modelling chills in music}
+\author{
+  \textbf{Rémi de Fleurian} \\\\\\\\\\\\\\\\\\\\\\
+  \small Submitted in partial fulfilment of the requirements \\
+  \small of the Degree of Doctor of Philosophy \\\\
+  \small School of Electronic Engineering and Computer Science \\
+  \small Queen Mary University of London
+}
+\date{\small February 2022}
+
+\begin{document} 
+\maketitle 
+\include{files/01-declaration}
+\include{files/02-publications}
+\include{files/03-abstract}
+\include{files/04-contents}
+\include{files/05-figures}
+\include{files/06-tables}
+\include{files/07-acknowledgements}
+\include{files/08-introduction}
+\include{files/09-review}
+\include{files/10-content}
+\include{files/11-valence}
+\include{files/12-expectation}
+\include{files/13-conclusion}
+\printbibliography 
+\end{document}

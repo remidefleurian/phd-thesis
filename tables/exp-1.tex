@@ -1,0 +1,41 @@
+\begin{table}[h]
+\centering
+\small
+
+\begin{threeparttable}
+\caption{Display names for features included in both sets of analyses}
+\label{tab:exp-1}
+
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llllll@{}}
+\toprule
+\textbf{Tool} & \textbf{Feature category} & \multicolumn{4}{l}{\textbf{Features}}\\ 
+\cmidrule{3-6}
+
+& & \textbf{$\mu_0$} & \textbf{$\sigma_0$} & \textbf{$\mu_1$} & \textbf{$\sigma_1$} \\ 
+\midrule
+
+MiningSuite & Envelope       & $\mu_0$env    & $\sigma_0$env    & $\mu_1$env    & $\sigma_1$env    \\
+            & Envelope +     & $\mu_0$env+   & $\sigma_0$env+   & $\mu_1$env+   & $\sigma_1$env+   \\
+            & Roughness      & $\mu_0$rough  & $\sigma_0$rough  & $\mu_1$rough  & $\sigma_1$rough  \\
+            & Flatness       & $\mu_0$flat   & $\sigma_0$flat   & $\mu_1$flat   & $\sigma_1$flat   \\
+            & Brightness     & $\mu_0$bright & $\sigma_0$bright & $\mu_1$bright & $\sigma_1$bright \\
+            & Spec. centroid & $\mu_0$spcent & $\sigma_0$cent   & $\mu_1$cent   & $\sigma_1$cent   \\
+            & Spec. flux     & $\mu_0$spflux & $\sigma_0$flux   & $\mu_1$flux   & $\sigma_1$flux   \\
+            & Spec. entropy  & $\mu_0$spent  & $\sigma_0$spent  & $\mu_1$spent  & $\sigma_1$spent  \\
+            & Spec. spread   & $\mu_0$spspr  & $\sigma_0$spspr  & $\mu_1$spspr  & $\sigma_1$spspr  \\
+            & Key distance   & $\mu_0$kdist  &                  & $\mu_1$kdist  &                  \\
+            & Key distance + & $\mu_0$kdist+ & $\sigma_0$kdist+ & $\mu_1$kdist+ & $\sigma_1$kdist+ \\
+            & HCDF           & $\mu_0$hcdf   & $\sigma_0$hcdf   & $\mu_1$hcdf   & $\sigma_1$hcdf   \\
+            & HCDF +         & $\mu_0$hcdf+  & $\sigma_0$hcdf+  & $\mu_1$hcdf+  & $\sigma_1$hcdf+  \\
+Spleeter    & Vocals         & $\mu_0$voc    & $\sigma_0$voc    & $\mu_1$voc    & $\sigma_1$voc    \\
+IDyOM       & Mel. entropy   & $\mu_0$melent & $\sigma_0$melent & $\mu_1$melent & $\sigma_1$melent \\
+            & Mel. IC        & $\mu_0$melic  & $\sigma_0$melic  & $\mu_1$melic  & $\sigma_1$melic  \\
+\bottomrule
+
+\end{tabular*}
+\begin{tablenotes}
+\small
+\item Note. Four types of features for each feature category. $\mu_0$ = mean of the original values, $\sigma_0$ = standard deviation of the original values, $\mu_1$ = mean of the first-order difference, $\sigma_1$ = standard deviation of the first order difference, + = feature segmented using a longer, sliding window, Spec. = Spectral, Mel. = Melodic, IC = information content.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
